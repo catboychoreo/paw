@@ -1,0 +1,164 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20;
+    font-size: 20px !important;
+    position: relative;
+    top: 3px;
+}
+
+body {
+    display:flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+#left-contain {
+    display: flex;
+    width: 250px;
+    transition: width 200ms;
+    overflow: clip;
+    position: relative;
+}
+
+#left-contain.hidden {
+    width: 55px;
+}
+
+#left {
+    border: 5px solid #ff83bd;
+    display: flex;
+    width: 250px;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    right: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+#left.hidden {
+    left: -210px;
+}
+
+#left-contain.hidden button {
+    opacity: 0;
+}
+
+#hidden-left {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+}
+
+#left > button {
+    width: 70%;
+    height: 5%;
+    border: 5px solid #ff83bd;
+    background-color: rgb(255, 253, 249);
+    margin-bottom: 10px;
+    font-size: large;
+    font-style: bold;
+    transition: opacity 200ms, background-color 200ms;
+}
+
+#left > button:hover {
+    background-color: pink;
+}
+
+#pawjob {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pfp {
+    width: 50%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
+#hide {
+    background-image: url("cool.png");
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    border:none;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+    opacity: 1 !important;
+}
+
+#right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searching {
+    display: flex;
+    border: #ff83bd solid 5px;
+    width: 75%;
+    height: 5%;
+    border-radius: 50px;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
+#search {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+#search-button {
+    background-color: transparent;
+    border: none;
+    justify-self: right;
+}
+
+#postings {
+    margin-top: 10px;
+    display: flex;
+    border: #ff83bd solid 5px;
+    width: 75%;
+    height: 50%;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+#job-pic-info {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+#job-pic {
+    height: 25%;
+    aspect-ratio: 1/1;
+}
+
+#job-info {
+    flex-direction: column;
+    margin-left: 10px
+}
+
+#job-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+#job-description {
+    overflow: auto;
+}
